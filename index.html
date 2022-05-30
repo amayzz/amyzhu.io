@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<style type="text/css">
@@ -24,7 +24,7 @@
         font-weight: bold;
         color: black;
         max-width: 960px;
-    margin: 65px 100px 20px 285px;
+        margin: 65px 100px 20px 285px;
 
 	}
 
@@ -50,7 +50,8 @@ p2 {
     font-family: 'Roboto Mono';
     font-size: 20px;
     display: inline;
-    text-align: right;
+    margin: 0px 0px 0px 875px;
+
 }
 
 img {
@@ -58,9 +59,17 @@ img {
     height: auto;
 }
 
+img2 {
+    max-width: 27%;
+    height: auto;
+}
+
+
+
 br {
         line-height: 150%;
      }
+
 a, a:hover, a:visited, a:active, a:link {
   color: inherit;
   text-decoration: none;
@@ -131,15 +140,57 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 480px) {
+  img {
+    height: 200px;
+    max-width: 200px;
+    margin: 0px 0px 0px -125px;
 
+  }
 
-	</style>
+  p2 {
+    font-family: 'Roboto Mono';
+    font-size: 35px;
+    display: inline;
+    margin: 0px 0px 0px 125px;
+    white-space: nowrap;
+  }
+
+  .body {
+	background-color: #ffffff;
+	align-items: center;
+	height: 70vh;
+	display: flex;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 45px;
+    font-weight: bold;
+    color: black;
+    max-width: 960px;
+    margin: 25px 100px 20px 285px;
+
+	}
+
+    #ifMobile {
+        height: 100px;
+    }
+
+    p {
+        white-space: nowrap;
+    }
+
+    p.1 {
+        margin: 1000px 1000px 0px 0px;
+    }
+
+}
+
+</style>
 </head>
 <body>
     <br>
-    <a href='#About_Me'><p2 style="margin: 0px 0px 0px 875px;">🌸 About Me </p2></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href='#My_Work'><p2>🌸 My Work </p2></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href='resume.html'><p2>🌸 Resume </p2></a>
+    <p2><a href='#About_Me'>🌸 About Me</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href='#My_Work'>🌸 My Work</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href='resume.html'>🌸 Resume</a></p2>
 
     <div class = "body">
         <img src="Assets/profile.jpg" alt="Avatar" style="border-radius: 50%; border: 4px solid #B22D6D;">&nbsp;&nbsp;
@@ -166,8 +217,8 @@ html {
             <a href="https://github.com/amayzz" target = "_blank"><img src="Assets/github.png" alt="Github Hyperlink" style="height: 30px; max-width: 30px; filter: grayscale(); margin: 225px 0px 0px -60px"></a>
         </div>
     </div>
-    <img src="Assets/Arrow.png" alt="Arrow" style="max-width: 4%; margin: -100px 0px 100px 680px">
-    <p style= "margin: -200px 0px 100px 740px; font-family: 'Roboto Mono'; font-size: 20px;">welcome to my page</p>
+    <img id="ifMobile" src="Assets/Arrow.png" alt="Arrow" style="max-width: 4%; margin: -100px 0px 100px 680px">
+    <p class ="1" style= "margin: -200px 0px 100px 740px; font-family: 'Roboto Mono'; font-size: 20px;">welcome to my page</p>
     <br>
 
     <div style="background-color: #FFF5F8">
