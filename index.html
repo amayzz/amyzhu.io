@@ -118,9 +118,16 @@ a, a:hover, a:visited, a:active, a:link {
     background-position: 0px 100%;
 }
 
-.container {
+.containerd {
   position: relative;
   width: 50%;
+  display: inline-block;
+}
+
+.containerm {
+  position: relative;
+  width: 50%;
+  display: none;
 }
 
 .image {
@@ -143,7 +150,7 @@ a, a:hover, a:visited, a:active, a:link {
   border-radius: 20px;
 }
 
-.container:hover .overlay {
+.containerd:hover .overlay {
   opacity: 0.8;
 }
 
@@ -263,6 +270,16 @@ html {
         margin: -28.7px 0px 0px 58px;
 }
 
+.containerd {
+  position: relative;
+  width: 50%;
+  display: none;
+}
+
+.containerm {
+  display: block;
+}
+
 }
 
 </style>
@@ -324,32 +341,61 @@ html {
 
     <div>
         <a id = "My_Work"></a><p class="d">My Work</p></a>
-        <div class = "container" style="display: inline-block; vertical-align: top;">
+        <div class = "containerd" style="vertical-align: top;">
         <img class = "img_img" src="Assets/lingoacethumbnail.png" alt="LingoAce Thumbnail" style="height: 300px; max-width: 700px; margin: -30px 0px 00px 200px;" class = "image"> 
         <div class = "overlay">
             <div class="text">LingoAce Onboarding Experience</div>
         </div>
         </div>
-        <div class = "container" style="display:inline-block;">
+
+        <div class = "containerm">
+          <img class = "img_img" src="Assets/lingoacethumbnail.png" alt="LingoAce Thumbnail" style="height: 200px; max-width: 600px; margin: 20px 0px 0px 50px;"> 
+
+        </div>
+      
+
+        <div class = "containerd">
             <img class = "img_img" src="Assets/sidechefthumbnail.png" alt="SideChef Thumbnail" style="height: 300px; max-width: 700px; margin: -130px 0px 0px 725px;" class = "image"> 
         <div class ="overlay" style="position: absolute; top: -130px; bottom: 0; left: 725px; right: 0; max-width: 700px; height: 300px">
             <div class="text">SideChef</div>
         </div>
         </div>
 
-        <div class="container" style="display:inline-block;">
+        <div class = "containerm">
+          <img class = "img_img" src="Assets/sidechefthumbnail.png" alt="SideChef Thumbnail" style="height: 200px; max-width: 600px; margin: 20px 0px 0px 50px;"> 
+
+        </div>
+        
+
+        <div class="containerd">
             <img class="img_img" src="Assets/proquestthumbnail.png" alt="ProQuest & NYU Thumbnail" style="height: 300px; max-width: 700px; margin: -125px 0px 00px 200px;" class="image">
             <div class="overlay" style="top:-125px; height: 300px;">
                 <div class="text"> ProQuest & NYU Datathon</div>
             </div>
         </div>
+
+
+        <div class = "containerm">
+          <img class = "img_img" src="Assets/proquestthumbnail.png" alt="ProQuest & NYU Thumbnail" style="height: 200px; max-width: 600px; margin: 20px 0px 0px 50px;"> 
+
+        </div>
+
+
         <div>
-            <div class="container" style="display:inline-block;">
+            <div class="containerd">
                 <img class="img_img" src="Assets/bayareathumbnail.png" alt="Bay Area Thumbnail" style="height: 300px; max-width: 700px; margin: -130px 0px 0px 725px;" class = "image"> 
             <div class="overlay" style="position: absolute; top: -130px; left:725px; height:300px">
             <div class="text">Bay Area Wage Gap EDA</div>
             </div>
         </div>
+
+
+        <div class = "containerm">
+          <img class = "img_img" src="Assets/bayareathumbnail.png" alt="Bay Area Thumbnail" style="height: 200px; max-width: 600px; margin: 20px 0px 0px 50px;"> 
+
+        </div>
+
+
     </div>
 </body>
 </html>
