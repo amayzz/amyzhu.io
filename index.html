@@ -46,12 +46,24 @@ body3 {
   margin: -80px 0px 0px 160px;
 }
 
+p.a {
+    position: absolute;
+    display: inline-block;
+    margin: -40px 0px 0px 0px; 
+    font-family: 'Roboto Mono'; 
+    font-size: 20px;
+}
+
 p2 {
     font-family: 'Roboto Mono';
     font-size: 20px;
-    display: inline;
+    display: inline block;
     margin: 0px 0px 0px 875px;
 
+}
+
+div.b {
+    background-color: #FFF5F8;
 }
 
 img {
@@ -140,11 +152,17 @@ html {
   scroll-behavior: smooth;
 }
 
+#ifMobile {
+    max-width: 4%; 
+    margin: -100px 0px 35px 680px
+}
+
 @media (max-width: 480px) {
   img {
     height: 200px;
     max-width: 200px;
     margin: 0px 0px 0px -125px;
+    display: inline-block;
 
   }
 
@@ -171,15 +189,18 @@ html {
 	}
 
     #ifMobile {
+        margin: -150px 0px 0px 600px;
         height: 100px;
     }
-
-    p {
+    p.a {
         white-space: nowrap;
+        position: absolute;
+        margin: -70px 0px 0px 640px;
     }
 
-    p.1 {
-        margin: 1000px 1000px 0px 0px;
+    div.b {
+        background-color: #FFF5F8;
+        width: 323%;
     }
 
 }
@@ -216,12 +237,14 @@ html {
         <div>
             <a href="https://github.com/amayzz" target = "_blank"><img src="Assets/github.png" alt="Github Hyperlink" style="height: 30px; max-width: 30px; filter: grayscale(); margin: 225px 0px 0px -60px"></a>
         </div>
+    
     </div>
-    <img id="ifMobile" src="Assets/Arrow.png" alt="Arrow" style="max-width: 4%; margin: -100px 0px 100px 680px">
-    <p class ="1" style= "margin: -200px 0px 100px 740px; font-family: 'Roboto Mono'; font-size: 20px;">welcome to my page</p>
+
+    <img id="ifMobile" src="Assets/Arrow.png" alt="Arrow">
+    <p class="a">welcome to my page</p>
     <br>
 
-    <div style="background-color: #FFF5F8">
+    <div class="b">
     <br>
     <a id = "About_Me"> <p style="margin: 80px 0px 100px 175px; font-family: 'Roboto Mono'; font-weight: 500; font-size: 40px; "><span class = "highlight">Quick Facts About Me</span></p></a>
     <p style="margin: -75px 0px 0px 200px; font-family: 'Roboto Mono'; font-size: 20px;"><span class = "highlight">◦ Data Science & Applied Psychology double major at NYU, graduating December 2023</span></p>
