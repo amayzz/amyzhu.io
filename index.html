@@ -6,7 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<style type="text/css">
@@ -159,49 +160,61 @@ html {
 
 @media (max-width: 480px) {
   img {
-    height: 200px;
-    max-width: 200px;
-    margin: 0px 0px 0px -125px;
+    height: 150px;
+    max-width: 150px;
+    margin: 0px 0px 0px -200px;
     display: inline-block;
 
   }
 
   p2 {
     font-family: 'Roboto Mono';
-    font-size: 35px;
+    font-size: 18px;
     display: inline;
-    margin: 0px 0px 0px 145px;
+    margin: 0px 0px 0px 45px;
     white-space: nowrap;
   }
 
   .body {
 	background-color: #ffffff;
 	align-items: center;
-	height: 70vh;
+	height: 110vh;
 	display: flex;
     font-family: 'Roboto Mono', monospace;
-    font-size: 45px;
+    font-size: 25px;
     font-weight: bold;
     color: black;
     max-width: 960px;
-    margin: 25px 100px 20px 285px;
+    margin: -50px 100px 20px 230px;
 
 	}
 
     #ifMobile {
-        margin: -150px 0px 0px 600px;
+        margin: -150px 0px 30px 285px;
         height: 100px;
     }
+
     p.a {
         white-space: nowrap;
         position: absolute;
-        margin: -70px 0px 0px 640px;
+        margin: -80px 0px 0px 20px;
+        font-size: 15px;
     }
 
     div.b {
         background-color: #FFF5F8;
-        width: 290%;
+        width: 100%;
     }
+
+    .typingwords {
+        width: 73%;
+        animation: typing 1.3s steps(30), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2.5px solid;
+        font-size: 25px;
+        margin: -45px 0px 0px 90px;
+}
 
 }
 
@@ -263,7 +276,7 @@ html {
     </div>
 
     <div>
-        <a id = "My_Work"></a><p style="margin: 80px 0px 100px 625px; font-family: 'Roboto Mono'; font-weight: 500; font-size: 40px; "><span class = "highlight">My Work</span></p></a>
+        <a id = "My_Work"></a><p style="margin: 80px 0px 100px 625px; font-family: 'Roboto Mono'; font-weight: 500; font-size: 40px; white-space: nowrap; "><span class = "highlight">My Work</span></p></a>
         <div class = "container" style="display: inline-block; vertical-align: top;">
         <img class = "img_img" src="Assets/lingoacethumbnail.png" alt="LingoAce Thumbnail" style="height: 300px; max-width: 700px; margin: -30px 0px 00px 200px;" class = "image"> 
         <div class = "overlay">
