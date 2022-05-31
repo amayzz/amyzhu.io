@@ -49,13 +49,25 @@ body3 {
 p2 {
     font-family: 'Roboto Mono';
     font-size: 20px;
-    display: inline;
-    text-align: right;
+    display: inline block;
+    margin: 0px 0px 0px 875px;
+
 }
 
 img {
     max-width: 27%;
     height: auto;
+}
+
+img.t {
+  max-width: 27%;
+  height: auto;
+  }
+
+img.r {
+  border: 2px solid #000000; 
+  height: 500px; 
+  max-width: 400px;
 }
 
 br {
@@ -129,23 +141,127 @@ html {
   text-align: center;
 }
 
+@media (max-width: 480px) {
+  img {
+    height: 100px;
+    max-width: 100px;
+    margin: 0px 0px 0px -200px;
+    display: inline-block;
+
+  }
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+  img.r {
+    height: 300px;
+    width: 230px;
+    border: 2px solid #000000; 
+  }
+
+  img.t {
+  max-width: 75%;
+  height: auto;
+  width: 70%;
+  
+  }
+
+  p2 {
+    font-family: 'Roboto Mono';
+    font-size: 12px;
+    display: inline;
+    margin: 0px 0px 0px 40px;
+    white-space: nowrap;
+  }
+
+  .body {
+	background-color: #ffffff;
+	align-items: center;
+	height: 90vh;
+	display: flex;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    max-width: 960px;
+    margin: -130px 100px 20px 230px;
+
+	}
+
+    #ifMobile {
+        margin: -150px 0px 30px 185px;
+        height: 100px;
+    }
+
+    p.a {
+        white-space: nowrap;
+        position: absolute;
+        margin: -75px 0px 0px 20px;
+        font-size: 10px;
+    }
+
+    p.b {
+      position: relative;
+      margin: 30px 0px 0px 30px; 
+      font-family: 'Roboto Mono'; 
+      font-size: 14px;
+      display: block;
+}
+
+    p.c {
+      margin: 20px 0px 0px 100px; 
+      font-family: 'Roboto Mono'; 
+      font-weight: 500; 
+      font-size: 18px;
+}
+
+    p.d {
+      margin: 50px 0px 0px 165px; 
+      font-family: 'Roboto Mono'; 
+      font-weight: 500; 
+      font-size: 18px; 
+      white-space: nowrap;
+}
+
+
+    div.b {
+        background-color: #FFF5F8;
+        width: 100%;
+    }
+
+    .typingwords {
+        width: 73%;
+        animation: typing 1.3s steps(30), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2.5px solid;
+        font-size: 16px;
+        margin: -28.7px 0px 0px 58px;
+}
+
+
+}
 
 	</style>
 </head>
 <body>
     <br>
-    <a href='index.html#About_Me'><p2 style="margin: 0px 0px 0px 875px;">🌸 About Me </p2></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href='index.html#My_Work'><p2>🌸 My Work </p2></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href='resume.html'><p2>🌸 Resume </p2></a>
+    <p2><a href='index.html#About_Me'>🌸 About Me</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href='index.htmll#My_Work'>🌸 My Work</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href='resume.html'>🌸 Resume</a></p2>
     <br>
     <br>
     <br>
     <br>
     <p style="text-align: center; font-family: 'Roboto Mono'; font-weight: 500; font-size: 20px;"> Resume </p>
-    <img src="Assets/resumepreview.png" alt="Resume Preview" class = "center" style="border: 2px solid #000000; height: 500px; max-width: 400px;">
+    <img src="Assets/resumepreview.png" alt="Resume Preview" class = "center r">
     <br>
     <div class="text-center">
-    <button style="padding: 0; border: none; background: none; max-width: 50%; cursor: pointer;" onclick="window.open('AMY_ZHU_RESUME.pdf')"><img src="Assets/downloadresume.png"></img></button>
+    <button style="padding: 0; border: none; background: none; max-width: 50%; cursor: pointer;" onclick="window.open('AMY_ZHU_RESUME.pdf')"><img src="Assets/downloadresume.png" class="center t"></img></button>
     </div>
 </body>
 </html>
