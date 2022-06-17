@@ -13,28 +13,29 @@
 	<style type="text/css">
     
 
-
+body {
+  background-color: #faeee7;
+}
 
 .body {
-		background-color: #ffffff;
 		align-items: center;
 		height: 70vh;
 		display: flex;
         font-family: 'Roboto Mono', monospace;
         font-size: 45px;
         font-weight: bold;
-        color: black;
+        color: #594a4e;
         max-width: 960px;
         margin: 65px 100px 20px 285px;
 
 	}
 
 bodyc {
-        color: #B22D6D
+        color: #B22D6D;
     }
 
 body3 {
-        color:black
+        color:#594a4e;
     }
 
 
@@ -54,7 +55,6 @@ body3 {
 
 .animation2 {
   width: 63%;
-  background-color: white;
   animation-fill-mode: both;
   animation: visible 0s 5s forwards, typing 1s steps(40), blink2 .3s step-end infinite alternate;
   white-space: nowrap;
@@ -122,14 +122,16 @@ p.d {
 
 p2 {
     font-family: 'Roboto Mono';
+    font-weight: 500;
     font-size: 20px;
     display: inline block;
     margin: 0px 0px 0px 875px;
+    color: #33272a;
 
 }
 
 div.b {
-    background-color: #FFF5F8;
+    background-color: #faeee7;
 }
 
 img {
@@ -174,7 +176,7 @@ a, a:hover, a:visited, a:active, a:link {
 }
 
 .image {
-  display: block;
+  display: inline-block;
   width: 100%;
   height: auto;
 }
@@ -223,28 +225,37 @@ html {
   img {
     height: 100px;
     max-width: 100px;
-    margin: 0px 0px 0px -200px;
     display: inline-block;
+    margin: 0px 0px 0px -195px;
 
+  }
+
+  img.m {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
 
   p2 {
     font-family: 'Roboto Mono';
+    font-weight: 500;
     font-size: 12px;
     display: inline;
     margin: 0px 0px 0px 40px;
     white-space: nowrap;
+    color: #33272a;
   }
 
   .body {
-	background-color: #ffffff;
+	background-color: #faeee7;
 	align-items: center;
 	height: 90vh;
 	display: flex;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: #594a4e;
     max-width: 960px;
     margin: -130px 100px 20px 230px;
 
@@ -268,6 +279,7 @@ html {
       font-family: 'Roboto Mono'; 
       font-size: 14px;
       display: block;
+      color: #594a4e;
 }
 
     p.c {
@@ -275,6 +287,7 @@ html {
       font-family: 'Roboto Mono'; 
       font-weight: 500; 
       font-size: 18px;
+      color: #33272a;
 }
 
     p.d {
@@ -287,7 +300,7 @@ html {
 
 
     div.b {
-        background-color: #FFF5F8;
+        background-color: #faeee7;
         width: 100%;
     }
 
@@ -307,7 +320,7 @@ html {
 
 .animation2 {
   width: 152%;
-  background-color: white;
+  background-color: #faeee7;
   animation-fill-mode: both;
   animation: visible 0s 5s forwards, typing 1.5s steps(40), blink2 .5s step-end infinite alternate;
   white-space: nowrap;
@@ -321,13 +334,16 @@ html {
 
 
 .containerd {
-  position: relative;
   width: 50%;
   display: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .containerm {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 }
@@ -344,9 +360,9 @@ html {
       <div>
         <img src="Assets/profile.jpg" alt="Avatar" style="border-radius: 50%; border: 4px solid #B22D6D;">&nbsp;&nbsp;
         <div style = "line-height:180%"> 
-          <p class="animation1">Hi there! I'm&nbsp;<bodyc>Amy</bodyc>.
+          <p class="animation1" style="color: #33272a">Hi there! I'm&nbsp;<bodyc>Amy</bodyc>.
             </p>
-        <p class="animation2">
+        <p class="animation2" style="color: #33272a">
         I'm a
                   <bodyc>
                     product manager<body3>.</body3>
@@ -356,32 +372,28 @@ html {
         
         </div>
         <div>
-            <a href="https://www.linkedin.com/in/amy-zhu1/" target = "_blank"><img src="Assets/linkedin.png" alt="LinkedIn Hyperlink" style="height: 30px; max-width: 30px; filter: grayscale(); margin: 270px 0px 0px -150px;" ></a>
+            <a href="https://www.linkedin.com/in/amy-zhu1/" target = "_blank"><img src="Assets/linkedinb.png" alt="LinkedIn Hyperlink" style="height: 28px; max-width: 28px; margin: 270px 0px 0px -150px;" ></a>
         </div>
         <div>
-            <a href="https://www.facebook.com/amy.zhu.94043/" target = "_blank"><img src="Assets/fb.png" alt="Facebook Hyperlink" style="height: 30px; max-width: 30px; filter: grayscale(); margin: 270px 0px 0px -105px"></a>
+            <a href="https://www.facebook.com/amy.zhu.94043/" target = "_blank"><img src="Assets/facebookb.png" alt="Facebook Hyperlink" style="height: 30px; max-width: 30px; margin: 270px 0px 0px -105px"></a>
         </div>
         <div>
-            <a href="https://github.com/amayzz" target = "_blank"><img src="Assets/github.png" alt="Github Hyperlink" style="height: 30px; max-width: 30px; filter: grayscale(); margin: 270px 0px 0px -60px"></a>
+            <a href="https://github.com/amayzz" target = "_blank"><img src="Assets/github.png" alt="Github Hyperlink" style="height: 28px; max-width: 28px; margin: 270px 0px 0px -60px"></a>
         </div>
     
     </div>
 
-    <img id="ifMobile" src="Assets/Arrow.png" alt="Arrow">
-    <p class="a">welcome to my page</p>
-    <br>
-
     <div class="b">
     <br>
-    <a id = "About_Me"> <p class="c"><span class = "highlight">Quick Facts About Me</span></p></a>
-    <p class="b"><span class = "highlight">◦ Data Science & Applied Psychology double major at NYU, graduating December 2023</span></p>
-    <p class="b"><span class = "highlight">◦ From Alpharetta, GA, a suburb right outside of Atlanta</span></p>
-    <p class="b"><span class = "highlight">◦ Product Manager intern at Disney (DMED)</span></p>
-    <p class="b"><span class = "highlight">◦ Currently working on a skincare app!</span></p>
-    <p class="b"><span class = "highlight">◦ Interested in data analytics, ui/ux research, design, and app development</span></p>
-    <p class="b"><span class = "highlight">◦ Competitive vocal artist of 8 years... now retired</span></p>
-    <p class="b"><span class = "highlight">◦ Video game lover (favorites are Overwatch, Apex Legends, and The Sims)</span></p>
-    <p class="b"><span class = "highlight">◦ Cat owner 🐱</span></p>
+    <a id = "About_Me"> <p class="c">Quick Facts About Me</p></a>
+    <p class="b" syle="color: #594a4e" >◦ Data Science & Applied Psychology double major at NYU, graduating December 2023</p>
+    <p class="b">◦ From Alpharetta, GA, a suburb right outside of Atlanta</p>
+    <p class="b">◦ Product Manager intern at Disney (DMED)</p>
+    <p class="b">◦ Currently working on a skincare app!</p>
+    <p class="b">◦ Interested in data analytics, ui/ux research, design, and app development</p>
+    <p class="b">◦ Competitive vocal artist of 8 years... now retired</p>
+    <p class="b">◦ Video game lover (favorites are Overwatch, Apex Legends, and The Sims)</p>
+    <p class="b">◦ Cat owner 🐱</p>
     <br>
     <br>
     <br>
@@ -390,59 +402,60 @@ html {
     </div>
 
     <div>
-        <a id = "My_Work"></a><p class="d">My Work</p></a>
-        <div class = "containerd" style="vertical-align: top;">
-        <img class = "img_img" src="Assets/lingoacethumbnail.png" alt="LingoAce Thumbnail" style="height: 300px; max-width: 700px; margin: -30px 0px 00px 200px;" class = "image"> 
-        <div class = "overlay">
-            <div class="text">LingoAce Onboarding Experience</div>
+        <a id = "My_Work"></a><p class="c">My Work</p></a>
+
+
+        <div style="display: flex; justify-content: center; padding: 13%; padding-top: 5%; padding-bottom: 0%;">
+          <div class="containerd">
+              <img class="img_img" src="Assets/lingoacethumbnail.png" alt="LingoAce Thumbnail" style="height: 300px; max-width: 700px;">
+          </div>
+  
+          <div>
+            <div class="containerd">
+                <img class="img_img" src="Assets/sidechefthumbnail.png" alt="SideChef Thumbnail" style="height: 300px; max-width: 700px" > 
         </div>
+        </div>
+        </div>
+
+        <br><br><br><br>
+
+        <div style="display: flex; justify-content: center; padding: 13%; padding-top: 0%;">
+          <div class="containerd">
+              <img class="img_img" src="Assets/proquestthumbnail.png" alt="ProQuest & NYU Thumbnail" style="height: 300px; max-width: 700px;">
+          </div>
+  
+          <div>
+            <div class="containerd">
+                <img class="img_img" src="Assets/bayareathumbnail.png" alt="Bay Area Thumbnail" style="height: 300px; max-width: 700px" > 
+        </div>
+        </div>
+        </div>
+
+
+  
+        <!-- Mobile View Images -->
+
+        <div class = "containerm">
+          <img class = "m" src="Assets/lingoacethumbnail.png" alt="LingoAce Thumbnail" style="height: 200px; max-width: 600px;"> 
+
         </div>
 
         <div class = "containerm">
-          <img class = "img_img" src="Assets/lingoacethumbnail.png" alt="LingoAce Thumbnail" style="height: 200px; max-width: 600px; margin: 20px 0px 0px 40px;"> 
-
-        </div>
-      
-
-        <div class = "containerd">
-            <img class = "img_img" src="Assets/sidechefthumbnail.png" alt="SideChef Thumbnail" style="height: 300px; max-width: 700px; margin: -130px 0px 0px 725px;" class = "image"> 
-        <div class ="overlay" style="position: absolute; top: -130px; bottom: 0; left: 725px; right: 0; max-width: 700px; height: 300px">
-            <div class="text">SideChef</div>
-        </div>
-        </div>
-
-        <div class = "containerm">
-          <img class = "img_img" src="Assets/sidechefthumbnail.png" alt="SideChef Thumbnail" style="height: 200px; max-width: 600px; margin: 20px 0px 0px 40px;"> 
-
+          <img class = "m" src="Assets/sidechefthumbnail.png" alt="SideChef Thumbnail" style="height: 200px; max-width: 600px;"> 
         </div>
         
 
-        <div class="containerd">
-            <img class="img_img" src="Assets/proquestthumbnail.png" alt="ProQuest & NYU Thumbnail" style="height: 300px; max-width: 700px; margin: -125px 0px 00px 200px;" class="image">
-            <div class="overlay" style="top:-125px; height: 300px;">
-                <div class="text"> ProQuest & NYU Datathon</div>
-            </div>
+
+        <div class = "containerm">
+          <img class = "m" src="Assets/proquestthumbnail.png" alt="ProQuest & NYU Thumbnail" style="height: 200px; max-width: 600px;"> 
+
         </div>
 
 
         <div class = "containerm">
-          <img class = "img_img" src="Assets/proquestthumbnail.png" alt="ProQuest & NYU Thumbnail" style="height: 200px; max-width: 600px; margin: 20px 0px 0px 40px;"> 
+          <img class = "m" src="Assets/bayareathumbnail.png" alt="Bay Area Thumbnail" style="height: 200px; max-width: 600px;"> 
 
         </div>
-
-
-        <div>
-            <div class="containerd">
-                <img class="img_img" src="Assets/bayareathumbnail.png" alt="Bay Area Thumbnail" style="height: 300px; max-width: 700px; margin: -130px 0px 0px 725px;" class = "image"> 
-            <div class="overlay" style="position: absolute; top: -130px; left:725px; height:300px">
-            <div class="text">Bay Area Wage Gap EDA</div>
-            </div>
-        </div>
-
-
-        <div class = "containerm">
-          <img class = "img_img" src="Assets/bayareathumbnail.png" alt="Bay Area Thumbnail" style="height: 200px; max-width: 600px; margin: 20px 0px 0px 40px;"> 
-
         </div>
 
 
