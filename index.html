@@ -170,8 +170,6 @@ a, a:hover, a:visited, a:active, a:link {
 }
 
 .containerm {
-  position: relative;
-  width: 50%;
   display: none;
 }
 
@@ -224,16 +222,19 @@ html {
 @media (max-width: 480px) {
   img {
     height: 100px;
-    max-width: 100px;
+    max-width: 170px;
     display: inline-block;
     margin: 0px 0px 0px -195px;
 
   }
 
   img.m {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: block;
+    text-align: center;
+    height: 150px;
+    max-width: 250px;
     
   }
 
@@ -283,11 +284,12 @@ html {
 }
 
     p.c {
-      margin: 20px 0px 0px 100px; 
+      margin: 0px 0px 0px 0px;
       font-family: 'Roboto Mono'; 
       font-weight: 500; 
       font-size: 18px;
       color: #33272a;
+      text-align: center;
 }
 
     p.d {
@@ -334,7 +336,6 @@ html {
 
 
 .containerd {
-  width: 50%;
   display: none;
   margin-left: auto;
   margin-right: auto;
@@ -342,9 +343,9 @@ html {
 
 .containerm {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+  width: 100%;
+  margin-bottom: 10px;
+    }
 
 }
 
@@ -401,13 +402,36 @@ html {
     <br>
     </div>
 
-    <div>
-        <a id = "My_Work"></a><p class="c">My Work</p></a>
+
+    <a id = "My_Work"></a><p class="c">My Work</p></a>
+    <br><br>
+    
 
 
-        <div style="display: flex; justify-content: center; padding: 13%; padding-top: 5%; padding-bottom: 0%;">
+  
+        <!-- Mobile View Images -->
+        <div class = "containerm">
+          <img class = "m" style="margin-left: auto; margin-right: auto;"src="Assets/lingoacethumbnail.png" alt="LingoAce Thumbnail"> 
+        </div>
+
+          <div class = "containerm">
+          <img class = "m" src="Assets/sidechefthumbnail.png" alt="SideChef Thumbnail"> 
+        </div>
+
+
+          <div class = "containerm">
+          <img class ="m" src="Assets/proquestthumbnail.png" alt="ProQuest & NYU Thumbnail"> 
+        </div>
+
+          <div class = "containerm">
+          <img class = "m" src="Assets/bayareathumbnail.png" alt="Bay Area Thumbnail"> 
+        </div>
+
+        <!-- Desktop View -->
+
+        <div style="display: flex; justify-content: center; padding: 14%; padding-top: 2%; padding-bottom: 5%;">
           <div class="containerd">
-              <img class="img_img" src="Assets/lingoacethumbnail.png" alt="LingoAce Thumbnail" style="height: 300px; max-width: 700px;">
+              <img class="img_img" src="Assets/lingoacethumbnail.png" alt="LingoAce Thumbnail" style="height: 300px; max-width: 700px">
           </div>
   
           <div>
@@ -417,9 +441,8 @@ html {
         </div>
         </div>
 
-        <br><br><br><br>
 
-        <div style="display: flex; justify-content: center; padding: 13%; padding-top: 0%;">
+        <div style="display: flex; justify-content: center; padding: 14%; padding-top: 0%; padding-bottom: 5%;">
           <div class="containerd">
               <img class="img_img" src="Assets/proquestthumbnail.png" alt="ProQuest & NYU Thumbnail" style="height: 300px; max-width: 700px;">
           </div>
@@ -431,32 +454,6 @@ html {
         </div>
         </div>
 
-
-  
-        <!-- Mobile View Images -->
-
-        <div class = "containerm">
-          <img class = "m" src="Assets/lingoacethumbnail.png" alt="LingoAce Thumbnail" style="height: 200px; max-width: 600px;"> 
-
-        </div>
-
-        <div class = "containerm">
-          <img class = "m" src="Assets/sidechefthumbnail.png" alt="SideChef Thumbnail" style="height: 200px; max-width: 600px;"> 
-        </div>
-        
-
-
-        <div class = "containerm">
-          <img class = "m" src="Assets/proquestthumbnail.png" alt="ProQuest & NYU Thumbnail" style="height: 200px; max-width: 600px;"> 
-
-        </div>
-
-
-        <div class = "containerm">
-          <img class = "m" src="Assets/bayareathumbnail.png" alt="Bay Area Thumbnail" style="height: 200px; max-width: 600px;"> 
-
-        </div>
-        </div>
 
 
     </div>
